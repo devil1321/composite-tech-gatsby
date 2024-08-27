@@ -8,7 +8,7 @@ const Main = () => {
   const [logo,setLogo] = useImage('nav-logo')
 
   return (
-    <div className='nav-main px-12 py-4 flex flex-wrap justify-between items-center'>
+    <div className='nav-main px-12 py-2 flex flex-wrap justify-between items-center'>
       {logo && <GatsbyImage image={logo.gatsbyImageData} alt="nav-logo" />}
       <Link className="block hover:underline" to="/laptops">Laptops</Link>
       <Link className="block hover:underline" to="/desktop">Desktop PC`s</Link>
