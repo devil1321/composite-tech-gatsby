@@ -8,7 +8,6 @@ const Header = () => {
   const [facebook,setFacebook] = useImage('facebook-icon')
   const [instagram,setInstagram] = useImage('instagram-icon')
 
-console.log(facebook)
   return (
     <div className='nav-header lg:px-12 bg-black text-white h-[35px] lg:flex lg:justify-between lg:items-center'>
         <div className="nav-date">

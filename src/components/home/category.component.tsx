@@ -32,7 +32,7 @@ const Category:React.FC<CategoryProps> = ({title,category,img}) => {
             <Link to="/category-products" className='block italic hover:underline text-white relative top-0 left-0 z-50'>See All Products</Link>
         </div>
       </div>
-      {Array.from(Array(4).keys()).map(k => (product && <Item image={product.gatsbyImageData} details={details} />))}
+      {Array.from(Array(4).keys()).map((k,i) => (product && <Item key={`home-category-item-${i}`} image={product.gatsbyImageData} details={details} />))}
     </div>
   )
 }

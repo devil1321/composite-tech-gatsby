@@ -23,7 +23,6 @@ const useImage = (name:string) => {
     const regex = new RegExp(`${name}`,'i')
     const image = data.allImageSharp.nodes.find((image:any) => regex.test(image.original.src))
     setImage(image)
-    console.log(image)
   }
 
   useEffect(()=>{

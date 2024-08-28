@@ -15,7 +15,7 @@ const Logos = () => {
   const [logo_7,setLogo_7] = useImage('home-logo-7')
 
   const handleLogos = () =>{
-    const tmpLogos = Array.from(Array(7).keys()).map(k => (eval('logo_' + (k + 1)) && <GatsbyImage key={`home-logo-${k}`} className='min-w-[calc(100% / 7)] mx-[30px]' image={eval('logo_' + (k + 1)).gatsbyImageData} alt={`logo-${k}`}/>))
+    const tmpLogos = Array.from(Array(7).keys())
     setLogos([...tmpLogos,...tmpLogos])
   }
 
@@ -26,7 +26,7 @@ const Logos = () => {
   return (
     <div className="home-logos-wrapper w-[100vw] overflow-x-hidden">
       <div className='home-logos transition-all w-max my-12 flex justify-between items-center'>
-        {logos.map(l => l)}
+        {logos.map((k,i) => (eval('logo_' + (k + 1)) && <GatsbyImage key={`home-logo-${i}`} className='min-w-[calc(100% / 7)] mx-[30px]' image={eval('logo_' + (k + 1)).gatsbyImageData} alt={`logo-${k}`}/>))}
       </div>
     </div>
   )
