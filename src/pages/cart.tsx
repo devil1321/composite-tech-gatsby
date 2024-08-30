@@ -18,7 +18,7 @@ const Cart = () => {
           <CatalogComponents.FilterComponents.Filters />
         </div>
         <div className='w-4/5'>
-        {Array.from(Array(12).keys()).map((k,i) => <GlobalComponents.ProductHorizonal key={`cart-item-${i}`} img={'product'} />)}
+            {Array.from(Array(12).keys()).map((k,i) => <GlobalComponents.ProductHorizonal key={`cart-item-${i}`} img={'product'} />)}
         </div>
       </div>
     </GlobalComponents.Layout>

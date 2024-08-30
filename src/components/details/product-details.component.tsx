@@ -8,7 +8,6 @@ import { Link } from 'gatsby'
 const ProductDetails = () => {
 
   const [main,setMain] = useImage('details')
-  const [feature,setFeature] = useImage('details-feature')
   const [paths,setPaths] = usePaths()
 
   return (
