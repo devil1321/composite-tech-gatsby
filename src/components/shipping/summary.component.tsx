@@ -9,7 +9,7 @@ const Summary = () => {
   const [isDiscount,setIsDiscount] = useState<boolean>(false)
 
   return (
-    <div className='shipping-summary pt-[100px] w-1/3'>
+    <div className='shipping-summary pt-[100px] w-[100%] md:w-1/3'>
         <h3 className="font-bold text-md">Summary</h3>
         <div onClick={()=>setIsTax(!isTax)} className="shipping-accordion-header my-2 flex justify-between items-center">
             <h3 className="text-md hover:text-gray-500 transition-all cursor-pointer">Estimate Shipping and Tax</h3>

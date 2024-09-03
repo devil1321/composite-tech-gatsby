@@ -6,7 +6,7 @@ import { LoginComponents } from '../components/login'
 const Login = () => {
   return (
     <GlobalComponents.Layout className='login'>
-      <div className="login-main py-[100px] flex justify-between items-start">
+      <div className="login-main py-[100px] flex flex-wrap md:flex-nowrap justify-between items-start">
         <LoginComponents.Form />
         <LoginComponents.Customer />
       </div>

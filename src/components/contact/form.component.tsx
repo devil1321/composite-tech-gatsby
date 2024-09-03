@@ -11,12 +11,12 @@ const Form = () => {
    const [email,setEmail] = useImage('email')
 
   return (
-    <div className='contact-form px-12 mb-[100px]'>
+    <div className='contact-form p-2 md:px-12 mb-[100px]'>
       <h2 className="text-5xl font-bold">Contact Us</h2>
       <p className="text-sm my-2 text-gray-500">We love hearing from you, our Shop customers.</p>
       <p className="text-sm my-2 text-gray-500">Please contact us and we will make sure to get back to you as soon as we possibly can.</p>
-      <div className='flex justify-between items-start'>
-      <form className='w-[60%]' action="">
+      <div className='flex flex-wrap md:flex-nowrap justify-between items-start'>
+      <form className='w-[100%] md:w-[60%]' action="">
         <div className="contact-form-fields flex justify-between items-center">
             <div className="contact-form-field w-[49%]">
                 <label className='text-sm text-gray-400' htmlFor="">Your Name:</label>
@@ -27,17 +27,17 @@ const Form = () => {
                 <input className='p-2 w-[100%] border-[1px] border-gray-400' type="text" placeholder='Enter Your Email'/>
             </div>
         </div>
-        <div className="contact-form-field my-2 w-[49%]">
+        <div className="contact-form-field my-2 w-[100%] md:w-[49%]">
             <label className='text-sm text-gray-400' htmlFor="">Your Phone Number:</label>
             <input className='p-2 w-[100%] border-[1px] border-gray-400' type="text" placeholder='Enter Your Phone'/>
         </div>
-        <div className="contact-form-field my-2 w-[49%]">
+        <div className="contact-form-field my-2 w-[100%] md:w-[49%]">
             <label className='text-sm text-gray-400' htmlFor="">What’s on your mind? *:</label>
             <textarea className='p-2 w-[100%] h-[200px] border-[1px] border-gray-400' placeholder='Jot us a note and we’ll get back to you as quickly as possible'></textarea>
         </div>
         <button className='text-white font-bold rounded-full bg-blue-600 px-12 py-2'>Submit</button>
         </form>
-        <div className='contact-info w-1/3'> 
+        <div className='contact-info mt-6 md:mt-0 w-[100%] md:w-1/3'> 
             <div className="contact-info-item flex justify-start items-center">
                 {address && <GatsbyImage image={address.gatsbyImageData} alt='location-icon '/>}
                 <div className='ml-2'>

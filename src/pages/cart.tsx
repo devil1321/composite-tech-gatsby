@@ -13,11 +13,11 @@ const Cart = () => {
       <h1 className="px-12 font-bold text-5xl">MSI PS Series(20)</h1>
       <CatalogComponents.Nav />
       <CatalogComponents.Filters />
-      <div className="cataglog-main mb-[100px] flex justify-start items-start">
-        <div className='w-1/5'>
+      <div className="cataglog-main mb-[100px] flex flex-wrap md:flex-nowrap justify-start items-start">
+        <div className='w-[100%] md:w-1/5'>
           <CatalogComponents.FilterComponents.Filters />
         </div>
-        <div className='w-4/5'>
+        <div className='w-[100%] md:w-4/5'>
             {Array.from(Array(12).keys()).map((k,i) => <GlobalComponents.ProductHorizonal key={`cart-item-${i}`} img={'product'} />)}
         </div>
       </div>

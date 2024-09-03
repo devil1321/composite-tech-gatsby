@@ -2,7 +2,7 @@ import React from 'react'
 
 const Customer = () => {
   return (
-    <div className='login-customer w-1/3'>
+    <div className='login-customer w-[100%] p-4 md:p-0 md:first-line:w-1/3'>
       <h3 className="font-bold text-md">New Customer?</h3>
       <p className="text-sm my-2">Creating an account has many benefits: </p>
       <ul className='pl-4 list-disc'>

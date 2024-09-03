@@ -5,10 +5,9 @@
 
 @layer base{
     body{
-        width: 100vw;
+        min-width: 100vw;
         padding: 0px;
         margin: 0px;
-        height: 900vh;
     }
     .container{
         min-width: 100vw;

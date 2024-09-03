@@ -58,7 +58,7 @@ const Reviews = () => {
 
 
   return (
-    <div className='home-reviews pt-6 pb-12 px-4 border-[3px] border-gray-400 rounded-md overflow-x-hidden my-[100px] w-[45%] mx-auto relative top-0 left-0'>
+    <div className='home-reviews pt-6 pb-12 px-4 border-[3px] border-gray-400 rounded-md overflow-x-hidden my-[100px] w-[98%] md:w-[45%] mx-auto relative top-0 left-0'>
       <Controls handleItem={handleItem} />
       <View itemRef={itemRef} viewRef={viewRef} />
       <button className='home-reviews-controls z-50 absolute bottom-3 left-4 px-4 py-2 bg-blue-300 transition-all rounded-md text-white font-bold hover:bg-blue-600'>Post Review</button>

@@ -12,9 +12,9 @@ const Checkout = () => {
   return (
     <GlobalComponents.Layout className='checkout'>
       <GlobalComponents.Breadcrumb paths={[...paths as string[]]}/>
-      <div className="checkout-main px-12 pb-[100px] flex jusitfy-between items-start">
+      <div className="checkout-main px-2 md:px-12 pb-[100px] flex flex-wrap md:flex-nowrap jusitfy-between items-start">
         <CheckoutComponents.Form />
-        <div className="checkout-feature w-1/3 px-6">
+        <div className="checkout-feature w-[100%] md:w-1/3 md:px-6">
           <CheckoutComponents.Steps />
           <CheckoutComponents.Summary />
         </div>

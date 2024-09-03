@@ -36,12 +36,12 @@ const Nav = () => {
   }
 
   return (
-    <div className='catalog-nav flex justify-between items-center p-12'>
+    <div className='catalog-nav flex flex-wrap md:flex-nowrap justify-between items-center p-2 md:p-12'>
         <div>&lt; Back</div>
         <p className="text-sm text-gray-500">items 1-35 of 61</p>
-        <div className="catalog-nav-menus flex gap-3">
+        <div className="catalog-nav-menus flex flex-wrap md:flex-nowrap gap-3">
           <div onClick={(e)=>handleMenu(e,positionMenuRef)}  className="catalog-position relative top-0 left-0">
-            <div className='catalog-current-position flex items-center cursor-pointer border-[1px] border-neutral-400 px-5 py-2'>
+            <div className='catalog-current-position w-max flex items-center cursor-pointer border-[1px] border-neutral-400 px-5 py-2'>
               <span className='text-gray-500 text-md'>Sort By:</span>
               <span className='font-bold text-md ml-2'>Position</span>
               {chevronDown && <GatsbyImage className='ml-5' image={chevronDown.gatsbyImageData} alt="chevron-down" />}
@@ -53,8 +53,8 @@ const Nav = () => {
               <div className="p-2 cursor-pointer hover:bg-neutral-600">Position</div>
             </div>
           </div>
-          <div onClick={(e)=>handleMenu(e,itemsMenuRef)} className="catalog-itemscursor-pointer relative top-0 left-0">
-            <div className='catalog-current-items border-[1px] border-neutral-400  flex items-center  px-5 py-2'>
+          <div onClick={(e)=>handleMenu(e,itemsMenuRef)} className="catalog-items w-max cursor-pointer relative top-0 left-0">
+            <div className='catalog-current-items border-[1px] w-max border-neutral-400  flex items-center  px-5 py-2'>
               <span className='text-gray-500 text-md'>Show:</span>
               <span className='font-bold text-md ml-2'>35 per page</span>
               {chevronDown && <GatsbyImage className='ml-5' image={chevronDown.gatsbyImageData} alt="chevron-down" />}

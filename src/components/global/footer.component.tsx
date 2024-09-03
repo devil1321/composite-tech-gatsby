@@ -10,20 +10,20 @@ const Footer = () => {
   const [payments,setPayments] = useImage('payment')
 
   return (
-    <div className='footer text-white px-[150px] py-[50px] bg-black'>
-      <div className="footer-header flex justify-between items-center">
+    <div className='footer text-white p-2 md:px-[150px] py-[50px] bg-black'>
+      <div className="footer-header flex gap-5 md:gap-0 flex-wrap md:flex-nowrap justify-between items-center">
         <div className="footer-col w-1/2">
             <h2 className="text-4xl my-2">Sign Up To Our Newsletter.</h2>
             <p>Be the first to hear about the latest offers.</p>
         </div>
-        <div className="footer-col w-1/2 text-right">
+        <div className="footer-col w-[100%] md:w-1/2 text-right">
             <form action="">
-                <input type="text" className="w-[60%] p-2 border-[1px] border-gray-400 bg-transparent" placeholder='Your Email' />
-                <button className="px-6 py-2 border-[1px] border-blue-400 bg-blue-400 text-white rounded-full ml-2">Subscribe</button>
+                <input type="text" className="w-[100%] md:w-[60%] p-2 border-[1px] border-gray-400 bg-transparent" placeholder='Your Email' />
+                <button className="block w-[100%] md:w-fit px-6 py-2 border-[1px] border-blue-400 bg-blue-400 text-white rounded-full my-2 md:my-0 md:ml-2">Subscribe</button>
             </form>
         </div>
       </div>
-      <div className="footer-content my-12 flex justify-between items-start">
+      <div className="footer-content my-12 flex flex-wrap md:flex-nowrap justify-between items-start">
         <div className="footer-col">
             <h3 className="text-md mb-6 font-bold">Information</h3>  
             <Link className='block text-sm hover:underline' to="#">About Us</Link>    
@@ -36,7 +36,7 @@ const Footer = () => {
             <Link className='block text-sm hover:underline' to="#">Advanced Search</Link>    
             <Link className='block text-sm hover:underline' to="#">Newsletter Subscription</Link>    
         </div>
-        <div className="footer-col">
+        <div className="footer-col w-1/2 md:w-fit">
             <h3 className="text-md font-bold mb-6">PC Parts</h3>
             <Link className='block text-sm hover:underline' to="#">CPUS</Link>    
             <Link className='block text-sm hover:underline' to="#">Add On Cards</Link>    
@@ -77,7 +77,7 @@ const Footer = () => {
             <Link className='block text-sm hover:underline' to="#">E-mail: shop@email.com</Link>    
         </div>
       </div>
-      <div className='footer-foot text-gray-400 flex justify-between items-center py-2 border-t-[1px] border-gray-600'>
+      <div className='footer-foot text-gray-400 flex flex-wrap md:flex-nowrap justify-between items-center py-2 border-t-[1px] border-gray-600'>
         <div className="footer-col">
             {facebook && <GatsbyImage image={facebook.gatsbyImageData} alt="facebook" />}
             {instagram && <GatsbyImage image={instagram.gatsbyImageData} alt="instagram" />}

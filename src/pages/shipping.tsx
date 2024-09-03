@@ -11,7 +11,7 @@ const Shipping = () => {
   return (
     <GlobalComponents.Layout className='shipping'>
       <GlobalComponents.Breadcrumb paths={[...paths as string[]]}/>
-      <div className="shipping-main px-12 pb-[100px] flex jusitfy-between items-start">
+      <div className="shipping-main p-2 md:px-12 pb-[100px] flex flex-wrap md:flex-nowrap jusitfy-between items-start">
         <ShippingComponents.ItemsComponents.Items />
         <ShippingComponents.Summary />
       </div>

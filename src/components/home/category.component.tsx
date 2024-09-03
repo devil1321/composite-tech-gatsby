@@ -24,10 +24,10 @@ const Category:React.FC<CategoryProps> = ({title,category,img}) => {
 
 
   return (
-    <div className='home-category flex justify-between items-start my-4 px-12'>
-      <div className="home-category-banner overflow-hidden relative top-0 left-0 w-[23%] h-[400px] flex flex-col justify-center items-center">
-        {categoryImage && <GatsbyImage className='absolute top-0 left-0 h-[100%]' image={categoryImage.gatsbyImageData} alt='category-image' />}
-        <div className="home-category-content -translate-x-[15%] text-center">
+    <div className='home-category md:mb-0 flex flex-wrap md:flex-nowrap justify-center md:justify-between items-start my-4 px-12'>
+      <div className="home-category-banner overflow-hidden relative top-0 left-0 min-w-[100%] md:min-w-[30%] xl:w-[23%] h-[400px] flex flex-col justify-center items-center">
+        {categoryImage && <GatsbyImage className='absolute top-0 left-0 min-w-[100%] md:min-w-fit md:h-[100%]' image={categoryImage.gatsbyImageData} alt='category-image' />}
+        <div className="home-category-content md:-translate-x-[15%] text-center">
             <h3 className="text-2xl font-bold text-white z-50 relative top-0 left-0">{title}</h3>
             <Link to="/category-products" className='block italic hover:underline text-white relative top-0 left-0 z-50'>See All Products</Link>
         </div>

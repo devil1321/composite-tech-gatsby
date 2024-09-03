@@ -15,9 +15,9 @@ const ProductHorizonal:React.FC<{itemRef?:MutableRefObject<HTMLDivElement>; img:
       }
 
     return (
-      <div ref={itemRef} className='product-horizontal my-2 bg-gray-100 p-5 cursor-pointer transition-all rounded-md hover:shadow-lg hover:shadow-gray-300 w-[80%] flex justify-start items-center mx-[30px]'>
+      <div ref={itemRef} className='product-horizontal my-2 bg-gray-100 p-5 cursor-pointer transition-all rounded-md hover:shadow-lg hover:shadow-gray-300 w-[100%] md:w-[80%] flex justify-start items-center mx-[30px]'>
         {image && <GatsbyImage className="mr-5" image={image.gatsbyImageData} alt="product-image" />}
-        <div className='product-horizontal-content w-[100%] pr-[200px]'>
+        <div className='product-horizontal-content w-[100%] pr-[30px] md:pr-[200px]'>
             <div className="product-horizontal-stars text-yellow-400 text-sm flex justify-between items-center" dangerouslySetInnerHTML={{__html:stars}}></div>
                 <h3 className="font-bold my-2 text-md">{details.title}</h3>
                 <div className="product-horizontal-price flex justify-between items-center">
